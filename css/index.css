@@ -229,6 +229,16 @@ body {
   text-align: justify;
   padding-right: 4.2rem;
 }
+.smith .smith-text button {
+  background: white;
+  border-color: black;
+  padding: 1rem;
+  width: 16rem;
+  border-width: thin;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 12px;
+}
 .smith .smith-text h3 {
   font-weight: bold;
   font-size: 3.6rem;
@@ -252,6 +262,17 @@ body {
   text-align: justify;
   padding-left: 4rem;
 }
+.futuristic .futuristic-text button {
+  background: white;
+  border-color: black;
+  padding: 1rem;
+  width: 16rem;
+  border-width: thin;
+  font-size: 1.8rem;
+  /* padding-top: 3rem; */
+  text-align: center;
+  margin-top: 12px;
+}
 .futuristic .futuristic-text h3 {
   font-weight: bold;
   font-size: 3.6rem;
@@ -260,4 +281,13 @@ body {
   margin: 0 0 1rem;
   width: 55rem;
   font-size: 1.8rem;
+}
+.recent {
+  display: flex;
+  padding-left: 6rem;
+  padding-top: 9rem;
+}
+.recent h3 {
+  font-weight: bold;
+  font-size: 3.6rem;
 }
