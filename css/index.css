@@ -202,7 +202,7 @@ body {
   position: relative;
   color: white;
   width: 100%;
-  padding-top: 1rem;
+  padding-top: 5rem;
 }
 .main img {
   width: 100%;
@@ -246,7 +246,8 @@ body {
 .smith .smith-text p {
   margin: 0 0 1rem;
   width: 55rem;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
+  letter-spacing: 0px;
 }
 .futuristic {
   display: flex;
@@ -269,7 +270,6 @@ body {
   width: 16rem;
   border-width: thin;
   font-size: 1.8rem;
-  /* padding-top: 3rem; */
   text-align: center;
   margin-top: 12px;
 }
@@ -280,14 +280,78 @@ body {
 .futuristic .futuristic-text p {
   margin: 0 0 1rem;
   width: 55rem;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
+  letter-spacing: 0px;
 }
 .recent {
-  display: flex;
   padding-left: 6rem;
   padding-top: 9rem;
+  width: 100%;
 }
 .recent h3 {
   font-weight: bold;
   font-size: 3.6rem;
+}
+.recent .villas {
+  width: 100%;
+  padding-top: 6rem;
+}
+.recent .villas .z {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.recent .villas .z img {
+  width: 100%;
+}
+.recent .villas .z button {
+  height: 10rem;
+  position: absolute;
+  /* right: 14.5rem; */
+  /* background-color: #D8D8D8; */
+  width: 39rem;
+  padding: 3.5rem;
+  border-color: white;
+  border-width: medium;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.4rem;
+  margin-top: 2.4rem;
+}
+.recent .mid-text {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.recent .mid-text p {
+  width: 45%;
+  font-size: 2rem;
+}
+.recent .outskirts {
+  width: 100%;
+  padding-top: 6rem;
+}
+.recent .outskirts .z {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.recent .outskirts .z img {
+  width: 100%;
+}
+.recent .outskirts .z button {
+  height: 10rem;
+  position: absolute;
+  /* right: 14.5rem; */
+  /* background-color: #D8D8D8; */
+  width: 39rem;
+  padding: 3.5rem;
+  border-color: white;
+  border-width: medium;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.4rem;
+  margin-top: 2.4rem;
 }
