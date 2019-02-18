@@ -150,25 +150,35 @@ body {
   flex-direction: row;
   padding-top: 0.85rem;
   padding-bottom: 0.85rem;
-  position: sticky;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
-.navigation p {
+.navigation a {
   padding-left: 6rem;
   font-weight: bold;
   color: white;
   font-size: 2.8rem;
+  text-decoration: none;
 }
-.navigation img {
+.navigation a:hover {
+  color: #222222;
+}
+.navigation .open {
   padding-right: 12rem;
+  display: block;
 }
 .menu {
-  display: flex;
+  display: none;
+  /* Hidden by default */
   justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: #D8D8D8;
-  padding-bottom: 100%;
-  opacity: 1;
+  height: 100%;
+  opacity: 0.97;
+  position: fixed;
 }
 .menu a {
   text-decoration: none;
@@ -180,4 +190,74 @@ body {
 }
 .menu a:hover {
   color: #222222;
+}
+.menu--open {
+  /* displays menu when active */
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  /* Specify a stack order in case you're using a different order for other elements */
+}
+.main {
+  position: relative;
+  color: white;
+  width: 100%;
+  padding-top: 1rem;
+}
+.main img {
+  width: 100%;
+}
+.main p {
+  position: absolute;
+  bottom: 81px;
+  left: 6.9rem;
+  color: white;
+  font-size: 10rem;
+  font-weight: bold;
+  line-height: 1.18;
+}
+.smith {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  align-items: center;
+}
+.smith img {
+  width: 100%;
+}
+.smith .smith-text {
+  text-align: justify;
+  padding-right: 4.2rem;
+}
+.smith .smith-text h3 {
+  font-weight: bold;
+  font-size: 3.6rem;
+}
+.smith .smith-text p {
+  margin: 0 0 1rem;
+  width: 55rem;
+  font-size: 1.8rem;
+}
+.futuristic {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.futuristic img {
+  width: 100%;
+}
+.futuristic .futuristic-text {
+  text-align: justify;
+  padding-left: 4rem;
+}
+.futuristic .futuristic-text h3 {
+  font-weight: bold;
+  font-size: 3.6rem;
+}
+.futuristic .futuristic-text p {
+  margin: 0 0 1rem;
+  width: 55rem;
+  font-size: 1.8rem;
 }

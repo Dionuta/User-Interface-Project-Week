@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8">	
+	<!--  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+ 
+
 </head>
 
 <body>
@@ -16,9 +21,10 @@
 <!-- Menu Content -->
 <div  class="navigation">
 
-  <p>S&J</p>
+  <a href="#">S&J</a>
     <div class="top">
-	  <img src="img\nav-hamburger.png" alt="">
+		<!-- Toggle burger -->
+	  <img class='open' src="img/nav-hamburger.png" alt="" onclick="chngimg()">
     </div>
 </div>
 
@@ -33,20 +39,48 @@
   </nav>
 
 
+
+ <div class="main home">
+	<img src="img/home/home-jumbotron.png" alt="">	
+	<div class="text-wrapper">
+	<p>
+    Integrity,<br>
+	Excellence,<br>
+	Progress.
+	 </p>
+	</div>
+</div>
+
+
 <div class="container">
 
-<!-- Home Page Content:
+<section class='smith'>
+	<div class="smith-text">
+<h3>Smith & Jones Architects</h3>
+
+<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+
+<button>Learn More</button>
+	 </div>
+	 <div class="smith-img">
+<img src="img/home/home-img-1.png"><img>
+     </div>
+</section>
+
+
+<section class='futuristic'>
+		<div class="futuristic-text">
+	<h3>Futuristic Designs</h3>
 	
-Integrity,
-Excellence,
-Progress.
-
-Smith & Jones Architects
-
-Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem 
-
-Learn More
-
+	<p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+	
+	<button>Learn More</button>
+		 </div>
+		 <div class="futuristic-img">
+	<img src="img/home/home-img-2.png"><img>
+			 </div>
+	</section>
+<!-- Home Page Content:
 Futuristic Designs
 
 Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem 
@@ -103,7 +137,11 @@ San Diego, CA 22345
 
 Copyright © 2018 Smith and Jones
 -->
-	<script src="js/index.js"></script>
 </div>
+<script src="js/nav.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
 </body>
 </html>
