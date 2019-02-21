@@ -2,18 +2,28 @@
   position: relative;
   color: white;
   width: 100%;
-  padding-top: 5rem;
+  .jum1 {display:block;}
+  .jum2 {display:none;}
+  @media @mobile{
+    .jum1 {display:none;}
+    .jum2 {display:block}
+  }
   img{
     width: 100%;
   }
   p{
     position: absolute;
-    bottom: 81px;
+    bottom: 8.1rem;
     left: 6.9rem;
     color: white;
     font-size: 10rem;
     font-weight: bold;
     line-height: 1.18;
+    @media @mobile{
+    font-size: 4rem;
+    bottom: 1.5rem;
+    left: 2.2rem;
+    }
   }
 }
 
@@ -22,12 +32,31 @@
     justify-content: center;
     padding-top: 5rem;
     align-items: center;
+    width: 100%;
+    @media @mobile{
+      flex-direction: column-reverse;
+    }
+    .smi1 {display:block;}
+  .smi2 {display:none;}
+  @media @mobile{
+    .smi1 {display:none;}
+    .smi2 {display:block}
+  }
     img{
       width: 100%;
     }
     .smith-text{
     text-align: justify;
-    padding-right: 4.2rem;
+    padding-right: 4.2rem;  
+    @media @mobile{
+      text-align: left;
+      padding-left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     
+      padding-right: 0;
+    }
     button{
       background: white;
     border-color: black;
@@ -36,20 +65,34 @@
     border-width: thin;
     font-size: 1.8rem;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 1.2rem;
+    @media @mobile {
+      width: 91%;
+
+      height: 5rem;
+    }
     }
       h3{
         font-weight: bold;
         font-size: 3.6rem;
+        padding-bottom: 1.5rem;
+    @media @mobile {
+      text-align: center;
+      font-size: 2.8rem;
+    }
+    }
       }
       p{
         margin: 0 0 1.0rem;
         width: 55rem;
         font-size: 1.9rem;
-        letter-spacing: 0px;
+        letter-spacing: 0rem;
+        @media @mobile{
+          width: 88%;
+        }
       }
     }
-}
+
 
 .futuristic{
   display: flex;
@@ -57,12 +100,23 @@
   padding-top: 5rem;
   align-items: center;
   flex-direction: row-reverse;
+  @media @mobile{
+    flex-direction: column-reverse;
+  }
   img{
     width: 100%;
   }
   .futuristic-text{
   text-align: justify;
   padding-left: 4rem;
+  @media @mobile{
+    text-align: left;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
    button{
     background: white;
     border-color: black;
@@ -71,18 +125,32 @@
     border-width: thin;
     font-size: 1.8rem;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 1.2rem;
+    @media @mobile {
+      width: 91%;
+      height: 5rem;
+    }
    }
     h3{
       font-weight: bold;
       font-size: 3.6rem;
+      padding-bottom: 1.5rem;
+      @media @mobile {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        font-size: 3rem;
+        margin-right: 7rem;
+      }
     }
     p{
       margin: 0 0 1.0rem;
       width: 55rem;
       font-size: 1.9rem;
-      letter-spacing: 0px;
-     
+      letter-spacing: 0rem;
+      @media @mobile{
+        width: 88%;
+      } 
     }
   }
 }
@@ -92,6 +160,9 @@
   padding-left: 6rem;
   padding-top: 9rem;
   width: 100%;
+  @media @mobile{
+    padding-left:0; 
+  }
   h3{
     font-weight: bold;
     font-size: 3.6rem;
@@ -103,14 +174,21 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    @media @mobile{
+      justify-content: center
+    }
+    .img1 {display:block;}
+    .img2 {display:none}
+    @media @mobile{
+      .img1 {display:none;}
+      .img2 {display:block}
+    }
     img{
       width: 100%;
       }
       button{
         height: 10rem;
         position: absolute;
-        /* right: 14.5rem; */
-        /* background-color: #D8D8D8; */
         width: 39rem;
         padding: 3.5rem;
         border-color: white;
@@ -119,6 +197,12 @@
         font-weight: 500;
         letter-spacing: 0.4rem;
         margin-top: 2.4rem;
+        @media @mobile{
+          width: 93%;
+          border: none;
+          margin-top: 6.4rem;
+
+        }
       }
     }
   }
@@ -128,9 +212,20 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 9rem;
+    @media @mobile{
+      padding-bottom: 0rem;
+    }
     p{
     width: 45%;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding-bottom: 2.6rem;
+    @media @mobile{
+      margin-bottom: 3rem;
+      width: 83%;
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
     }
   }
   .outskirts{
@@ -140,14 +235,21 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    @media @mobile{
+      justify-content: center
+    }
+    .out1 {display:block;}
+    .out2 {display:none}
+    @media @mobile{
+      .out1 {display:none;}
+      .out2 {display:block}
+    }
     img{
       width: 100%;
       }
       button{
         height: 10rem;
         position: absolute;
-        /* right: 14.5rem; */
-        /* background-color: #D8D8D8; */
         width: 39rem;
         padding: 3.5rem;
         border-color: white;
@@ -156,9 +258,21 @@
         font-weight: 500;
         letter-spacing: 0.4rem;
         margin-top: 2.4rem;
+        @media @mobile {
+          width: 93%;
+          border: none;
+          margin-top: 6.4rem;
+
+        }
       }
     }
   }
 }
 
 
+.container{
+  @media @mobile{
+    padding-right: 1px; 
+     padding-left: 1px;
+  }
+}
