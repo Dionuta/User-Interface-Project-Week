@@ -143,6 +143,44 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+.main {
+  position: relative;
+  color: white;
+  width: 100%;
+}
+.main .jum1 {
+  display: block;
+}
+.main .jum2 {
+  display: none;
+}
+@media (max-width: 600px) {
+  .main .jum1 {
+    display: none;
+  }
+  .main .jum2 {
+    display: block;
+  }
+}
+.main img {
+  width: 100%;
+}
+.main p {
+  position: absolute;
+  bottom: 8.1rem;
+  left: 6.9rem;
+  color: white;
+  font-size: 10rem;
+  font-weight: bold;
+  line-height: 1.18;
+}
+@media (max-width: 600px) {
+  .main p {
+    font-size: 4rem;
+    bottom: 1.5rem;
+    left: 2.2rem;
+  }
+}
 .navigation {
   background-color: #D8D8D8;
   display: flex;
@@ -207,44 +245,6 @@ body {
   width: 100%;
   z-index: 1;
   /* Specify a stack order in case you're using a different order for other elements */
-}
-.main {
-  position: relative;
-  color: white;
-  width: 100%;
-}
-.main .jum1 {
-  display: block;
-}
-.main .jum2 {
-  display: none;
-}
-@media (max-width: 600px) {
-  .main .jum1 {
-    display: none;
-  }
-  .main .jum2 {
-    display: block;
-  }
-}
-.main img {
-  width: 100%;
-}
-.main p {
-  position: absolute;
-  bottom: 8.1rem;
-  left: 6.9rem;
-  color: white;
-  font-size: 10rem;
-  font-weight: bold;
-  line-height: 1.18;
-}
-@media (max-width: 600px) {
-  .main p {
-    font-size: 4rem;
-    bottom: 1.5rem;
-    left: 2.2rem;
-  }
 }
 .smith {
   display: flex;
@@ -640,6 +640,14 @@ body {
   font-size: 2rem;
   line-height: 1.5;
 }
+@media (max-width: 600px) {
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
+}
 .nav > li > a {
   position: relative;
   display: block;
@@ -650,6 +658,11 @@ body {
   display: flex;
   justify-content: space-around;
   width: fit-content;
+}
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+  }
 }
 ul {
   list-style: none;
@@ -662,6 +675,11 @@ ul li {
   margin: 3.5rem;
   font-size: 1.7rem;
 }
+@media (max-width: 600px) {
+  ul li {
+    margin: 1.5rem;
+  }
+}
 ul li a {
   text-decoration: none;
   color: black;
@@ -670,6 +688,7 @@ ul li a {
   position: relative;
   border-style: solid;
   border-width: thin;
+  background: white;
 }
 ul li a:hover {
   color: gray;
@@ -706,17 +725,39 @@ ul li a {
   margin-bottom: 9rem;
   margin-top: 2rem;
 }
+@media (max-width: 600px) {
+  .text {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .text img {
   width: 100%;
   margin-right: 4rem;
 }
+@media (max-width: 600px) {
+  .text img {
+    margin-top: 3rem;
+  }
+}
 .text h4 {
   font-size: x-large;
   font-weight: 600;
+}
+@media (max-width: 600px) {
+  .text h4 {
+    margin-left: 5rem;
+  }
 }
 .text p {
   font-size: 1.5rem;
   padding-top: 4rem;
   width: 64%;
   line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .text p {
+    width: 70%;
+    margin-left: 3rem;
+  }
 }
