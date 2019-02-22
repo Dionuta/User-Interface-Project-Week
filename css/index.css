@@ -761,3 +761,55 @@ ul li a {
     margin-left: 3rem;
   }
 }
+.allItems {
+  margin-top: 5rem;
+  margin-left: 8rem;
+  font-size: 1.4rem;
+  margin-bottom: 8rem;
+}
+.allItems .container-form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.allItems .container-form form h1 {
+  font-size: 3.7rem;
+  font-weight: bolder;
+}
+.allItems .container-form form .button {
+  background-color: white;
+  border-color: black;
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 14rem;
+  border-width: thin;
+  font-size: 1.6rem;
+}
+.allItems .container-form form .z {
+  margin-top: 4.4rem;
+  margin-left: 0;
+}
+.allItems .container-form form .z h4 {
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+}
+.allItems .container-form form .z input {
+  height: 3.4rem;
+  border-radius: 0.3rem;
+  width: 45rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+.allItems .container-form form .z textarea {
+  width: 45rem;
+  height: 15rem;
+  border-radius: 0.3rem;
+  padding-left: 1rem;
+}
+.allItems .container-form form .z .y input {
+  height: 2rem;
+  border-radius: 0.3rem;
+  width: 2rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+}
