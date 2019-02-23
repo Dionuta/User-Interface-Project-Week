@@ -1,5 +1,5 @@
 .navigation{
-    background-color: #D8D8D8;
+    background-color: @grey;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -15,11 +15,11 @@
     a{
         padding-left: 6rem;
         font-weight: bold;
-        color: white;
+        color: @white;
         font-size: 2.8rem;   
         text-decoration: none;
          &:hover{
-         color:#222222;  
+         color: @black;  
        }
      }
     .open{
@@ -36,7 +36,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #D8D8D8;
+    background-color: @grey;
     height: 100%;
     opacity: .97;
     position: fixed;
@@ -45,10 +45,10 @@
        font-size: 4.8rem;
        font-weight: bold;
        line-height: 8.5rem;
-       color: #FFFFFF;
+       color: @white;
        border: 100%;
        &:hover{
-         color:#222222;  
+         color:@black;  
        }
     }
 }

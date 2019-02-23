@@ -145,7 +145,7 @@ body {
 }
 .main {
   position: relative;
-  color: white;
+  color: #FFFFFF;
   width: 100%;
 }
 .main .jum1 {
@@ -169,7 +169,7 @@ body {
   position: absolute;
   bottom: 8.1rem;
   left: 6.9rem;
-  color: white;
+  color: #FFFFFF;
   font-size: 10rem;
   font-weight: bold;
   line-height: 1.18;
@@ -201,7 +201,7 @@ body {
 .navigation a {
   padding-left: 6rem;
   font-weight: bold;
-  color: white;
+  color: #FFFFFF;
   font-size: 2.8rem;
   text-decoration: none;
 }
@@ -290,7 +290,7 @@ body {
   }
 }
 .smith .smith-text button {
-  background: white;
+  background: #FFFFFF;
   border-color: black;
   padding: 1rem;
   width: 16rem;
@@ -356,7 +356,7 @@ body {
   }
 }
 .futuristic .futuristic-text button {
-  background: white;
+  background: #FFFFFF;
   border-color: black;
   padding: 1rem;
   width: 16rem;
@@ -446,7 +446,7 @@ body {
   position: absolute;
   width: 39rem;
   padding: 3.5rem;
-  border-color: white;
+  border-color: #FFFFFF;
   border-width: medium;
   font-size: 3rem;
   font-weight: 500;
@@ -522,7 +522,7 @@ body {
   position: absolute;
   width: 39rem;
   padding: 3.5rem;
-  border-color: white;
+  border-color: #FFFFFF;
   border-width: medium;
   font-size: 3rem;
   font-weight: 500;
@@ -557,7 +557,7 @@ body {
   align-items: baseline;
   font-size: 2rem;
   line-height: 3.4rem;
-  color: white;
+  color: #FFFFFF;
   flex-wrap: wrap;
   width: 92%;
 }
@@ -581,6 +581,8 @@ body {
 .footer-main .all-footer input {
   width: 36rem;
   border-radius: 0.7rem;
+  color: black;
+  padding-left: 2rem;
 }
 @media (max-width: 600px) {
   .footer-main .all-footer input {
@@ -682,26 +684,26 @@ ul li {
 }
 ul li a {
   text-decoration: none;
-  color: black;
+  color: #222222;
   font-weight: bold;
   padding: 10px;
   position: relative;
   border-style: solid;
   border-width: thin;
-  background: white;
+  background: #FFFFFF;
 }
 ul li a:hover {
   color: gray;
 }
 .nav .active a {
-  color: white;
-  border: 1px black solid;
+  color: #FFFFFF;
+  border: 1px #222222 solid;
   background: #5E9FB9;
 }
 .nav .active a:hover {
   border-color: transparent;
   background: #222222;
-  color: #FFF;
+  color: #FFFFFF;
 }
 .tab-pane {
   display: none;
