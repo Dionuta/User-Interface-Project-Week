@@ -890,3 +890,19 @@ ul li a {
   margin-bottom: 1.5rem;
   padding-left: 1rem;
 }
+.all-locations h1 {
+  font-size: 3.7rem;
+  font-weight: bolder;
+}
+.all-locations .location {
+  margin-top: 7rem;
+}
+.all-locations .location h3 {
+  font-size: x-large;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.all-locations .location p {
+  font-size: medium;
+  line-height: 1.5;
+}
