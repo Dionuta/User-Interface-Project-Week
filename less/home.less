@@ -6,6 +6,10 @@
     padding-top: 5rem;
     align-items: center;
     width: 100%;
+    @media @tablet{
+      flex-direction: column-reverse;
+      align-items: normal;
+    }
     @media @mobile{
       flex-direction: column-reverse;
     }
@@ -50,8 +54,9 @@
         font-size: 3.6rem;
         padding-bottom: 1.5rem;
     @media @mobile {
-      text-align: center;
-      font-size: 2.8rem;
+      
+      font-size: 2.5rem;
+
     }
     }
       }
@@ -73,6 +78,10 @@
   padding-top: 5rem;
   align-items: center;
   flex-direction: row-reverse;
+  @media @tablet{
+    flex-direction: column-reverse;
+    align-items: normal;
+  }
   @media @mobile{
     flex-direction: column-reverse;
   }
@@ -82,6 +91,10 @@
   .futuristic-text{
   text-align: justify;
   padding-left: 4rem;
+  @media @tablet{
+    align-items: normal;
+    padding-left: 0;
+  }
   @media @mobile{
     text-align: left;
     padding-left: 0;
@@ -111,9 +124,9 @@
       @media @mobile {
         padding-top: 1rem;
         padding-bottom: 2rem;
-        text-align: center;
-        font-size: 3rem;
-        margin-right: 7rem;
+        font-size: 2.5rem;
+        
+        
       }
     }
     p{
@@ -133,6 +146,9 @@
   padding-left: 6rem;
   padding-top: 9rem;
   width: 100%;
+  @media @tablet{
+    padding-left: 0;
+  }
   @media @mobile{
     padding-left:0; 
   }
@@ -193,6 +209,10 @@
     width: 45%;
     font-size: 2.5rem;
     padding-bottom: 2.6rem;
+    @media @tablet{
+      width: auto;
+
+    }
     @media @mobile{
       margin-bottom: 3rem;
       width: 83%;

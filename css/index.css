@@ -174,12 +174,20 @@ body {
   font-weight: bold;
   line-height: 1.18;
 }
+@media (max-width: 800px) {
+  .main p {
+    bottom: 1.4rem;
+  }
+}
 @media (max-width: 600px) {
   .main p {
     font-size: 4rem;
     bottom: 1.5rem;
     left: 2.2rem;
   }
+}
+.container {
+  width: 100%;
 }
 .navigation {
   background-color: #D8D8D8;
@@ -253,6 +261,12 @@ body {
   align-items: center;
   width: 100%;
 }
+@media (max-width: 800px) {
+  .smith {
+    flex-direction: column-reverse;
+    align-items: normal;
+  }
+}
 @media (max-width: 600px) {
   .smith {
     flex-direction: column-reverse;
@@ -312,8 +326,7 @@ body {
 }
 @media (max-width: 600px) {
   .smith .smith-text h3 {
-    text-align: center;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 }
 .smith p {
@@ -334,6 +347,12 @@ body {
   align-items: center;
   flex-direction: row-reverse;
 }
+@media (max-width: 800px) {
+  .futuristic {
+    flex-direction: column-reverse;
+    align-items: normal;
+  }
+}
 @media (max-width: 600px) {
   .futuristic {
     flex-direction: column-reverse;
@@ -345,6 +364,12 @@ body {
 .futuristic .futuristic-text {
   text-align: justify;
   padding-left: 4rem;
+}
+@media (max-width: 800px) {
+  .futuristic .futuristic-text {
+    align-items: normal;
+    padding-left: 0;
+  }
 }
 @media (max-width: 600px) {
   .futuristic .futuristic-text {
@@ -380,9 +405,7 @@ body {
   .futuristic .futuristic-text h3 {
     padding-top: 1rem;
     padding-bottom: 2rem;
-    text-align: center;
-    font-size: 3rem;
-    margin-right: 7rem;
+    font-size: 2.5rem;
   }
 }
 .futuristic .futuristic-text p {
@@ -400,6 +423,11 @@ body {
   padding-left: 6rem;
   padding-top: 9rem;
   width: 100%;
+}
+@media (max-width: 800px) {
+  .recent {
+    padding-left: 0;
+  }
 }
 @media (max-width: 600px) {
   .recent {
@@ -478,6 +506,11 @@ body {
   font-size: 2.5rem;
   padding-bottom: 2.6rem;
 }
+@media (max-width: 800px) {
+  .recent .mid-text p {
+    width: auto;
+  }
+}
 @media (max-width: 600px) {
   .recent .mid-text p {
     margin-bottom: 3rem;
@@ -550,6 +583,7 @@ body {
   padding: 2rem 0rem;
   display: flex;
   justify-content: center;
+  align-items: none;
 }
 .footer-main .all-footer {
   display: flex;
@@ -593,6 +627,7 @@ body {
 .footer-main .all-footer .all-locations {
   display: flex;
   justify-content: space-evenly;
+  align-items: none;
 }
 @media (max-width: 600px) {
   .footer-main .all-footer .all-locations {
@@ -641,6 +676,21 @@ body {
 .service-text p {
   font-size: 2rem;
   line-height: 1.5;
+  width: 94%;
+}
+@media (max-width: 800px) {
+  .service-text p {
+    width: 75%;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 600px) {
+  .service-text p {
+    width: 94%;
+  }
+}
+.container {
+  width: 82%;
 }
 @media (max-width: 600px) {
   .service-container {
@@ -659,11 +709,18 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  width: fit-content;
+  width: auto;
+}
+@media (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+    display: block;
+  }
 }
 @media (max-width: 600px) {
   .nav {
     flex-direction: column;
+    width: 100%;
   }
 }
 ul {
@@ -691,6 +748,7 @@ ul li a {
   border-style: solid;
   border-width: thin;
   background: #FFFFFF;
+  text-align: center;
 }
 ul li a:hover {
   color: gray;
@@ -727,19 +785,27 @@ ul li a {
   margin-bottom: 9rem;
   margin-top: 2rem;
 }
+@media (max-width: 800px) {
+  .text {
+    flex-direction: column;
+  }
+}
 @media (max-width: 600px) {
   .text {
     flex-direction: column;
     align-items: center;
+    margin-left: auto;
   }
 }
 .text img {
   width: 100%;
   margin-right: 4rem;
+  margin-top: 5rem;
 }
 @media (max-width: 600px) {
   .text img {
     margin-top: 3rem;
+    margin-left: 4rem;
   }
 }
 .text h4 {
@@ -749,6 +815,7 @@ ul li a {
 @media (max-width: 600px) {
   .text h4 {
     margin-left: 5rem;
+    margin-left: 3rem;
   }
 }
 .text p {
@@ -757,10 +824,18 @@ ul li a {
   width: 64%;
   line-height: 1.5;
 }
+@media (max-width: 800px) {
+  .text p {
+    width: 95%;
+    font-size: medium;
+  }
+}
 @media (max-width: 600px) {
   .text p {
     width: 70%;
     margin-left: 3rem;
+    font-size: 1.7rem;
+    width: 80%;
   }
 }
 .allItems {
