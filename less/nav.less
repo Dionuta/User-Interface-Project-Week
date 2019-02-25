@@ -1,0 +1,60 @@
+.navigation{
+    background-color: @grey;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: .85rem;
+    padding-bottom: .85rem;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    @media @mobile{
+      align-items: baseline;
+    }
+    a{
+        padding-left: 6rem;
+        font-weight: bold;
+        color: @white;
+        font-size: 2.8rem;   
+        text-decoration: none;
+         &:hover{
+         color: @black;  
+       }
+     }
+    .open{
+        padding-right: 12rem;
+        display: block;
+        @media @mobile {
+          padding-right: 4rem;
+        }
+    }
+}
+
+.menu{
+    display: none;/* Hidden by default */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: @grey;
+    height: 100%;
+    opacity: .97;
+    position: fixed;
+    a{
+       text-decoration: none;
+       font-size: 4.8rem;
+       font-weight: bold;
+       line-height: 8.5rem;
+       color: @white;
+       border: 100%;
+       &:hover{
+         color:@black;  
+       }
+    }
+}
+
+.menu--open { /* displays menu when active */
+    display: flex;
+    width: 100%;
+    z-index: 1;/* Specify a stack order in case you're using a different order for other elements */
+  }
